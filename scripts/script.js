@@ -1,0 +1,17 @@
+/*
+Rock, Scissor, Paper App planner:
+- create a container with three options to choose from: Rock, Scissors, paper.
+- ask the user for one of the options: Rock, Scissors or Paper.
+- store the user's choice somewhere.
+- make the machine choose one of the three options randomly.
+- store the machine's choice somewhere.
+- compare the user's choice with the machine choice.
+- create a set of rules to win or lose the game.
+- determine wether the user or the machine wins.
+- score points to the winner.
+- give the user the choice to play a new round or end the game.
+- if promted to play another round, ask the user to choose one of the options again, 
+then repeat all over, keeping the score while the player keeps playing.
+- if game is ended, compare the score and message the player accordion
+to winning or losing the game.
+*/
