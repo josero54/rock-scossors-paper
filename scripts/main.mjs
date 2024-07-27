@@ -102,12 +102,16 @@ const gameController = (function() {
         score.rounds = 0;
         score.current_user_move = '🏁';
         score.current_cpu_move = '🏁';
+        score.current_user_move = '-';
+        score.current_cpu_move = '-';
 
             document.querySelector('#user h2').innerHTML = score.user_score;
             document.querySelector('#cpu h2').innerHTML = score.cpu_score;
             document.querySelector('#counter h2').innerHTML = score.rounds;
             document.querySelector('#user h1').innerHTML = score.current_user_move;
             document.querySelector('#cpu h1').innerHTML = score.current_cpu_move;
+            document.querySelector('#user h3').innerHTML = score.current_user;
+            document.querySelector('#cpu h3').innerHTML = score.current_cpu;
     }
 
     return {

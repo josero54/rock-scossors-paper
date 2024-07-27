@@ -1,91 +1,110 @@
-
-*{
-    padding: 0px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-body{
+
+body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background: rgb(189,56,139);
     background: linear-gradient(90deg, rgba(189,56,139,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    padding: 10px;
+    padding: 1vw;
 }
-#canvas{
-    padding: 10px;
+
+#canvas {
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2vh 2vw;
     display: flex;
     flex-direction: column;
     background-color: darkcyan;
     justify-content: space-between;
     align-items: center;
-    border: white solid 15px;
-    box-shadow: darkslategray 10px 10px 11px;
-    gap: 3rem;
-
+    border: white solid 2vmin;
+    box-shadow: darkslategray 1vmin 1vmin 1.1vmin;
+    gap: 2vh;
 }
 
-#banner, .score_board_container{
+#banner, .score_board_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-}
-#banner h2{
-    margin-top: 2px;
+    gap: 1vh;
 }
 
-#gameboard{
+#gameboard {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    }
-#buttons{
+    gap: 2vh;
+}
+
+#buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 2vh;
 }
-#score, #main{
+
+#score, #main {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between; 
-    align-items: center;  
-    gap: 4rem;   
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3vw;
 }
 
+h1 { font-size: 5vmin; }
+h2 { font-size: 4vmin; }
+h3, h4 { font-size: 3vmin; }
 
-h1,h2,h3,h4,p{
-    color:whitesmoke;
+h1, h2, h3, h4, p {
+    color: whitesmoke;
     text-align: center;
 }
-button{
+
+button {
     background-color: blue;
-    border: lightgray solid 2px;
-    border-radius: 25px;
-    margin: 5px;
-}
-.score_board_container{
-  background-color: rgba(255, 128, 0, 0.835);
-  border-radius: 15px;
-  border: lightgray solid 2px;
-  padding: 30px;
+    border: lightgray solid 0.3vmin;
+    border-radius: 4vmin;
+    margin: 1vmin;
+    padding: 1vh 3vw;
 }
 
-button h1{
-    margin: 5px 20px 5px 20px;
+button h1 {
+    margin: 0;
+    font-size: 3vmin;
 }
-#main{
-  background-color: rgb(6, 174, 6);
-  border-radius: 15px;
-  border: lightgray solid 2px;
-  padding: 30px;
+
+.score_board_container {
+    background-color: rgba(255, 128, 0, 0.835);
+    border-radius: 2vmin;
+    border: lightgray solid 0.3vmin;
+    padding: 3vh 3vw;
 }
-#user,#cpu{
+
+#main {
+    background-color: rgb(6, 174, 6);
+    border-radius: 2vmin;
+    border: lightgray solid 0.3vmin;
+    padding: 3vh 3vw;
+}
+
+.user_score_container, .cpu_score_container, .progress_container {
+    flex: 1 1 25%;
+    min-width: 80px;
+    text-align: center;
+}
+
+#user, #cpu {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 1vh;
 }
