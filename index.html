@@ -3,10 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet"  href="./assets/styles/style.css">
+    <style src = "./assets/fonts/segoe-ui-emoji.ttf"></style>
     <title>Rock, scissors, paper</title>
 </head>
 <body>
-    <script src="./scripts/script.js"></script>
+    <div id="canvas">
+        <div class="title_container" id = "banner">
+            <h1>Rock   -   Scissors  -  Paper</h1>
+            <h2>-------------Game------------</h2>
+        </div>
+    
+        <div class="game_board_conatiner" id="gameboard">
+            <div class="score_board_container">
+                <div class="score_title_container">
+                       <h1>Score</h1>
+                </div>
+                <div class="score_board" id="score">
+                    <div class="user_score_container" id="user">
+                            <h2>0</h2>
+                            <h4>user</h4>
+                    </div>
+                    <div class="progress_container" id="progress">
+                          <div class="counter" id="counter">
+                            <h2>0</h2>
+                            <h4>Rounds</h4>
+                          </div>
+                    </div>
+                    <div class="cpu_score_container" id="cpu">
+                        <h2>0</h2>
+                        <h4>CPU</h4>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="game_container" id = "main">
+                <div class="user_choice_container" id="user">
+                    <h1>🏁</h1>
+                    <h3>-</h3>
+                    <h4>YOU</h4>
+                </div>
+                <div class="computer_choice_container" id="cpu">
+                    <h1>🏁</h1>
+                    <h3>-</h3>
+                    <h4>CPU</h4>
+                </div>
+            </div>
+        </div>
+       <div class="button_container" id="buttons">
+            <button type="button" class = "Play_btn" id = "play">
+                        <h1>PLAY</h1>
+            </button>
+            <button type="button" class = "end_btn" id = "end">
+                        <h1>END</h1>
+            </button>
+       </div>
+    </div>
+    <script type = "module" src="./scripts/main.mjs"></script>    
 </body>
 </html>
