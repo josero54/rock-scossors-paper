@@ -21,13 +21,13 @@ const gameController = (function() {
     
 
     //plays the game
-    function playRound() {
+    async function playRound() {
         
         //end button enabled 
         document.querySelector('#end').disabled = false;
         
         //validate what the player chooses
-        let valid_input = validate_input();
+        let valid_input = await validate_input();
         
         //cancels a round
         if (valid_input === null) {
@@ -100,8 +100,8 @@ const gameController = (function() {
         score.user_score = 0;
         score.cpu_score = 0;
         score.rounds = 0;
-        score.current_user_move = '🏁';
-        score.current_cpu_move = '🏁';
+        score.current_user = '🏁';
+        score.current_cpu = '🏁';
         score.current_user_move = '-';
         score.current_cpu_move = '-';
 
